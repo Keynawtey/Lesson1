@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 10px auto;
+            font-size: large;
+            word-spacing: 2px;
+            background: skyblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button{
+            background: black;
+            color: white;
+            margin: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: larger;
+            cursor: pointer;
+        }
+        h1{
+            color: black;
+            font-size: 40px;
+            background-color: burlywood;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ken Kinoti</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium odio voluptas modi velit, omnis rem asperiores at nulla sapiente temporibus, delectus porro maxime. Qui assumenda labore exercitationem. Sapiente eligendi accusamus numquam sint necessitatibus neque voluptatum veniam repellat delectus soluta aliquam quod dolorum earum, blanditiis ipsum eum, ad, ullam laborum.</p>
+    <h2>Cyber Engineering</h2>
+    <p>Meet Ken, a cybersecurity enthusiast fresh out of coding school, armed with a dedication to safeguarding digital landscapes and fortifying systems against potential threats. With a specialized focus on cybersecurity, Ken has honed his skills in threat detection, vulnerability assessment, and risk mitigation strategies. His portfolio showcases a series of projects highlighting his expertise in securing networks, implementing encryption protocols, and conducting penetration testing to identify and address potential weaknesses. Ken's passion for cybersecurity is evident in his proactive approach</p>
+
+    <p id="more" style="color: coral;"></p>
+
+    <button onclick="document.getElementById('more').innerHTML=more">Send Invite</button>
+
+    <h1 id="clickedtimes"></h1>
+    <button onclick="document.getElementById('clickedtimes').innerHTML=counter++">clickedtimes</button>
+
+    <h1 id="less"></h1>
+    <button onclick="document.getElementById('less').innerHTML=less--">Reduce</button>
+    
+
+    <script>
+        let more ="check my cv "
+        let counter=0;
+        let less=100000;
+    </script>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
